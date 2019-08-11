@@ -1,0 +1,190 @@
+body {
+  background-color: rgb(228, 228, 228);
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+ul {
+  font-size: 1.2rem;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+blockquote {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+footer {
+  width: 100%;
+  bottom: 0px;
+  margin-bottom: -16px;
+  padding-top: 10px;
+}
+
+.profilePicture {
+  border-radius: 20%;
+  margin-right: 5px;
+}
+
+.small-font {
+  font-size: .8rem;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.banner {
+  height: 105vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: 100% 0;
+  clip-path: polygon(0 0,
+      100% 0,
+      100% 100%,
+      0 calc(100% - 5vw));
+}
+
+.mid-banner {
+  clip-path: polygon(100% 0,
+      0 calc(5vw),
+      0 calc(100% - 5vw),
+      100% 100%);
+}
+
+.dark {
+  filter: grayscale(1) brightness(0.40);
+  /* filter: brightness(0.40); */
+}
+
+.banner-container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.banner-container h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.banner-img-centered {
+  position: relative;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.banner-img-left {
+  position: relative;
+  object-fit: cover;
+  object-position: 0% 50%;
+}
+
+.banner-img-right {
+  position: relative;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+.banner-container p {
+  font-size: 2rem;
+}
+
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  border-radius: 24px;
+  margin-right: 5px;
+}
+
+.container {
+  text-align: left;
+}
+
+.carousel {
+  background-color: rgb(160, 160, 160);
+}
+
+.carousel-item {
+  text-align: center;
+  height: 500px;
+  vertical-align: middle;
+}
+
+.carousel-image {
+  max-height: 500px;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.centered-img {
+  max-width: 80%;
+}
+
+.centered-img-container {
+  text-align: center;
+}
+
+.inline-image-right {
+  float: right;
+  max-width: 15%;
+  padding-left: 10px;
+}
+
+.inline-image-left {
+  float: left;
+  width: auto;
+  max-width: 20%;
+  height: auto;
+  max-height: 100%;
+  padding-right: 10px;
+  overflow: auto;
+}
+
+.rounded-image {
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.vertical-centered {
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+}
+
+.vertical-centered p {
+  margin: auto;
+  vertical-align: middle;
+}
+
+.break {
+  clear: both;
+}
+
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
