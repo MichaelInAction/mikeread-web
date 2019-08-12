@@ -5,13 +5,16 @@
   "dependencies": {
     "animated-scroll-to": "^1.2.2",
     "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
     "jquery": "^3.4.1",
+    "path": "^0.12.7",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
