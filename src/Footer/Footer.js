@@ -20,7 +20,6 @@ function Header() {
             <i className="fas fa-envelope icon"></i>
           </a>
         </span>
-        <p className="small-font">Built using React.js</p>
       </div>
     </footer>
   );
