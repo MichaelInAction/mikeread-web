@@ -1,10 +1,10 @@
-import React from 'react';
 import Banner from '../Banner/Banner';
 import bg1 from '../images/banner.jpg';
 import bg2 from '../images/banner2.png';
-import me from '../images/me.png';
 import marist from '../images/marist.png';
+import me from '../images/me.png';
 import resume from '../MichaelReadResume.pdf';
+import React from 'react';
 
 function Landing() {
   const headingContent = (
@@ -76,8 +76,8 @@ function Landing() {
         <p>I spent the summer of 2018, as well as the 2018-2019 academic year,
           interning at IBM in Southbury, CT working on Corporate Applications. I learned a lot of valuable skills from this internship, as well
           as many new technologies that I would not have otherwise come into contact with.
-          <br/>
-          <br/>
+        <br/>
+        <br/>
           Outside of academics, I have experience in leadership through Kappa Kappa Psi, an
           honorary band service fraternity. I was elected Secretary of our chapter for the 2017-2018 academic year,
           and I was also elected president of our chapter for the 2018-2019 academic year. This organization
@@ -97,7 +97,7 @@ function Landing() {
         <p>For my Honors Senior Thesis, I worked with the same faculty
           member on a project titled "Deployment and Hyperparameter Optimization of Chatbots". My work can be found <a href="https://github.com/MichaelInAction/Senior_Thesis_LSTM_Chatbot" target="_blank"  rel="noopener noreferrer">here</a>.
           The work I did on this project was accepted for a presentation at the 21st International Conference on Artificial Intelligence in July-August 2019.</p>
-          <br className="break" />
+        <br className="break" />
       </div>
     </div>
   );

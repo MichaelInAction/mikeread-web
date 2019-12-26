@@ -1,7 +1,7 @@
-import React from 'react';
 import Landing from './Landing/Landing';
 import Personal from './Personal/Personal';
 import Projects from './Projects/Projects';
+import React from 'react';
 
 function Body(props) {
   let content = '';

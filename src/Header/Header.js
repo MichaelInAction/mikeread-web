@@ -1,6 +1,6 @@
-import React from 'react';
 import animateScrollTo from 'animated-scroll-to';
 import logo from '../logo.svg';
+import React from 'react';
 
 function Header(props) {
   const dropdownItems = props.dropdown.map((element) =>

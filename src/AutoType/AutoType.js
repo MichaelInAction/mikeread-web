@@ -41,7 +41,7 @@ class AutoType extends React.Component {
     }
     let that = this;
     setTimeout(function() {
-      that.updateText()
+      that.updateText();
     }, delta);
   }
 
