@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 class AutoType extends React.Component {
   constructor(props) {
@@ -16,7 +17,13 @@ class AutoType extends React.Component {
   }
 
   render() {
-    return <p>{this.state.before}<b>{this.state.current}</b>{this.state.after}</p>;
+    return (<StyledP>
+      {this.state.before}
+      <StyledB>
+        {this.state.current}
+      </StyledB>
+      {this.state.after}
+    </StyledP>);
   }
 
   updateText() {
@@ -44,7 +51,16 @@ class AutoType extends React.Component {
       that.updateText();
     }, delta);
   }
-
 }
+
+const StyledP = styled.p`
+  ${props => props.theme.fonts.heavy}
+  ${props => props.theme.fonts.large}
+  color: ${props => props.theme.text.light};
+`;
+
+const StyledB = styled.b`
+  color: ${props => props.theme.text.highlight};
+`;
 
 export default AutoType;

@@ -1,22 +1,36 @@
 import React from 'react';
+import styled from 'styled-components';
 
 function Banner(props) {
-  let className = 'banner';
-  if(props.dark) {
-    className = className + ' dark';
-  }
-  if(!props.top) {
-    className = className + ' mid-banner';
-  }
-  className = className + ' banner-img-' + props.align;
   return (
-    <div className='banner-container'>
-      <img src={props.img} alt='' className={className}/>
-      <div  className='centered'>
+    <BannerDiv>
+      <BannerImage dark={props.dark} src={props.img} alt=''/>
+      <CenteredDiv>
         {props.content}
-      </div>
-    </div>
+      </CenteredDiv>
+    </BannerDiv>
   );
 }
+
+const BannerDiv = styled.div`
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: ${props => props.theme.colors.white};
+  overflow: hidden;
+`;
+
+const BannerImage = styled.img`
+  ${props => props.theme.sizes.full}
+  ${props => props.theme.banner}
+  ${props => props.dark && 'filter: grayscale(1) brightness(0.40);'}
+`;
+
+const CenteredDiv = styled.div`
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
 
 export default Banner;
