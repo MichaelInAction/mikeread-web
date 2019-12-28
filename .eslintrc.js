@@ -49,12 +49,7 @@ module.exports = {
             }
         ],
         'no-unused-vars': [
-            'warn',
-            {
-              'vars': 'local',
-              'args': 'all',
-              'ignoreRestSiblings': false
-            }
+            'off'
         ]
     }
 };

@@ -18,6 +18,8 @@ const BannerDiv = styled.div`
   text-align: center;
   color: ${props => props.theme.colors.white};
   overflow: hidden;
+  border-top: 1px solid ${props => props.theme.colors.black};
+  border-bottom: 1px solid ${props => props.theme.colors.black};
 `;
 
 const BannerImage = styled.img`

@@ -4,7 +4,6 @@ import bg1 from '../images/banner.jpg';
 import bg2 from '../images/banner2.png';
 import Button from 'react-bootstrap/Button';
 import marist from '../images/marist.png';
-import me from '../images/me.png';
 import React from 'react';
 import resume from '../MichaelReadResume.pdf';
 import styled from 'styled-components';

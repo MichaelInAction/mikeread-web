@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Body from './Body';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
-import theme from 'styled-theming';
 import { ThemeProvider } from 'styled-components';
 
 function Main() {

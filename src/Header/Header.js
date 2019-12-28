@@ -1,6 +1,5 @@
 import animateScrollTo from 'animated-scroll-to';
 import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
 import { FaBars } from 'react-icons/fa';
 import logo from '../logo.svg';
 import Nav from 'react-bootstrap/Nav';
