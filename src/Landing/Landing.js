@@ -18,7 +18,7 @@ function Landing() {
       <SocialLink variant="outline-primary" href="https://twitter.com/RealRainbowMike" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></SocialLink>
       <SocialLink variant="outline-primary" href="https://github.com/MichaelInAction" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></SocialLink>
       <SocialLink variant="outline-primary" href="https://www.linkedin.com/in/mread15/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></SocialLink>
-      <SocialLink variant="outline-primary" href={resume} download="MichaelReadResume.pdf" target="_blank" rel="noopener noreferrer">Resume</SocialLink>
+      <SocialLink variant="outline-primary" href={resume} download="MichaelReadResume.pdf" target="_blank" rel="noopener noreferrer">Résumé</SocialLink>
     </div>);
 
   return (
