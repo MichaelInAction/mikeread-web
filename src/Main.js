@@ -28,7 +28,7 @@ function Main() {
       main: '#0A0908',
       light: '#D5E2E2',
       link: '#449DD1',
-      highlight: '#A02DFF',
+      highlight: '#39C7DF',
     },
     fonts: {
       main: 'font-family: "Raleway", sans-serif;font-size: 16px;',
@@ -42,7 +42,7 @@ function Main() {
     colors: {
       lightBlue: '#449DD1',
       darkBlue: '#001F54',
-      purple: '#A02DFF',
+      highlight: '#39C7DF',
       white: '#D5E2E2',
       black: '#0A0908',
     },

@@ -54,7 +54,7 @@ const IconLink = styled.a`
   color: ${props => props.theme.colors.darkBlue};
   }
   &:active {
-  color: ${props => props.theme.colors.purple};
+  color: ${props => props.theme.colors.highlight};
   }
 `;
 

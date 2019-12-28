@@ -61,7 +61,7 @@ const MyNavLink = styled(Button)`
   }
   &:active {
     background: ${props => props.theme.colors.white} !important;
-    color: ${props => props.theme.colors.purple} !important;
+    color: ${props => props.theme.colors.highlight} !important;
     border: 0px solid ${props => props.theme.colors.black} !important;
   }
 `;

@@ -6,6 +6,7 @@ import bg4 from '../images/banner4.png';
 import bg5 from '../images/banner5.png';
 import marvel from '../images/mcuTierList.png';
 import React from 'react';
+import styled from 'styled-components';
 
 function Personal() {
   return (
@@ -52,9 +53,9 @@ function Personal() {
             collection on DVD, which has prompted many friends to say that I have too many
             DVDs. If you were interested, this is my current ranking of the MCU films:
           </p>
-          <div className="centered-img-container">
-            <img src={marvel} className="centered-img" alt="MCU Tier List" />
-          </div>
+          <CenteredImageContainer className="centered-img-container">
+            <MarvelImage src={marvel} className="centered-img" alt="MCU Tier List" />
+          </CenteredImageContainer>
         </SectionBody>
       </BodySection>
 
@@ -76,5 +77,13 @@ function Personal() {
     </ContentContainer>
   );
 }
+
+const CenteredImageContainer = styled.div`
+  text-align: center;
+`;
+
+const MarvelImage = styled.img`
+  max-width: 80%;
+`;
 
 export default Personal;
