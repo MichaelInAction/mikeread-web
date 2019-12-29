@@ -11,7 +11,7 @@ import styled from 'styled-components';
 function Personal(props) {
   props.setPage('personal');
   return (
-    <ContentContainer>
+    <ContentContainer id="head">
 
       <Banner img={bg3} dark='true' content={<AutoType before="I love " typedWords={[ 'comics', 'games', 'programming', 'machine learning', 'music' ]} after=""/>} top='true' align='centered' />
 
