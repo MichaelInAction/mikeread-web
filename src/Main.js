@@ -25,8 +25,8 @@ function Main() {
   const myTheme = {
     backgroundColor: '#D5E2E2',
     text: {
-      main: '#0A0908',
-      light: '#D5E2E2',
+      main: '#000000',
+      light: '#FFFFFF',
       link: '#449DD1',
       highlight: '#39C7DF',
     },
@@ -43,8 +43,9 @@ function Main() {
       lightBlue: '#449DD1',
       darkBlue: '#001F54',
       highlight: '#39C7DF',
-      white: '#D5E2E2',
-      black: '#0A0908',
+      light: '#D5E2E2',
+      white: '#FFFFFF',
+      black: '#000000',
     },
     spacings: {
       quote: 'padding-left: 5%;padding-right: 5%;',

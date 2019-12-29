@@ -38,20 +38,20 @@ function Header(props) {
 
 const MyNavbar = styled(Navbar)`
   ${props => props.theme.fonts.main}
-  background: ${props => props.theme.colors.white};
+  background: ${props => props.theme.colors.light};
   box-shadow: 0px 5px 10px black;
 `;
 
 const MyNavLink = styled(Button)`
   color: ${props => props.theme.text.link};
-  background: ${props => props.theme.colors.white};
-  border: 0px solid ${props => props.theme.colors.white};
+  background: ${props => props.theme.colors.light};
+  border: 0px solid ${props => props.theme.colors.light};
   &:hover {
-    background: ${props => props.theme.colors.white};
+    background: ${props => props.theme.colors.light};
     color: ${props => props.theme.colors.darkBlue};
   }
   &:focus {
-    background: ${props => props.theme.colors.white};
+    background: ${props => props.theme.colors.light};
     color: ${props => props.theme.colors.darkBlue};
     border: 0px solid ${props => props.theme.colors.black};
     outline: none !important;
@@ -60,7 +60,7 @@ const MyNavLink = styled(Button)`
     box-shadow: none !important;
   }
   &:active {
-    background: ${props => props.theme.colors.white} !important;
+    background: ${props => props.theme.colors.light} !important;
     color: ${props => props.theme.colors.highlight} !important;
     border: 0px solid ${props => props.theme.colors.black} !important;
   }
