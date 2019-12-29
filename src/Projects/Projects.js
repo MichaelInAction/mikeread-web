@@ -6,7 +6,8 @@ import MyCarousel from '../MyCarousel/MyCarousel';
 import React from 'react';
 import styled from 'styled-components';
 
-function Projects() {
+function Projects(props) {
+  props.setPage('projects');
   return (
     <ContentContainer>
       <BodySection>

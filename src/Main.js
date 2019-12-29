@@ -72,8 +72,8 @@ function Main() {
   return (
     <div>
       <ThemeProvider theme={myTheme}>
-        <Header dropdown={dropdown} setPage={setPage} />
-        <Body page={page} />
+        <Header dropdown={dropdown} />
+        <Body page={page} setPage={setPage} />
         <Footer />
       </ThemeProvider>
     </div>

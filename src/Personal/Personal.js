@@ -8,7 +8,8 @@ import marvel from '../images/mcuTierList.png';
 import React from 'react';
 import styled from 'styled-components';
 
-function Personal() {
+function Personal(props) {
+  props.setPage('personal');
   return (
     <ContentContainer>
 

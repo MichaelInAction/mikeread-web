@@ -23,9 +23,9 @@ function Header(props) {
       <Navbar.Toggle aria-controls="navbar" />
       <Navbar.Collapse id="navbar" className="justify-content-end nav" justify="true">
         <Nav className="justify-content-end">
-          <MyNavLink onClick={() => {props.setPage('landing'); animateScrollTo(0);}}>Home</MyNavLink>
-          <MyNavLink onClick={() => {props.setPage('projects'); animateScrollTo(0);}}>Projects</MyNavLink>
-          <MyNavLink onClick={() => {props.setPage('personal'); animateScrollTo(0);}}>Personal</MyNavLink>
+          <MyNavLink href='/'>Home</MyNavLink>
+          <MyNavLink href='/projects'>Projects</MyNavLink>
+          <MyNavLink href='/personal'>Personal</MyNavLink>
           <NavDropdown title={
             <DropdownSpan>Sections</DropdownSpan>
           } id="basic-nav-dropdown">

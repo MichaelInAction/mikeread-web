@@ -8,7 +8,8 @@ import React from 'react';
 import resume from '../MichaelReadResume.pdf';
 import styled from 'styled-components';
 
-function Landing() {
+function Landing(props) {
+  props.setPage('landing');
   const headingContent = (
     <div>
       <UpperHeader>Hello, my name is</UpperHeader>
