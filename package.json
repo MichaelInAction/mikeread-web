@@ -21,10 +21,14 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "react-scripts build",
+    "watch_start": "npm-watch start",
+    "watch_dev": "npm-watch dev",
+    "dev": "npm install & node server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
