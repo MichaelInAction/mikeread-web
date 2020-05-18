@@ -1,0 +1,14 @@
+body {
+  margin: 0px;
+  font-family: 'Bebas Neue', cursive;
+  background-color: #0E0E13;
+  min-height: 100vh;
+}
+
+button {
+  font-family: 'Bebas Neue', cursive;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
