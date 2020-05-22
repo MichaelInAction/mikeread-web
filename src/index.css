@@ -3,6 +3,7 @@ body {
   font-family: 'Bebas Neue', cursive;
   background-color: #0E0E13;
   min-height: 100vh;
+  z-index: -50;
 }
 
 button {
@@ -11,4 +12,9 @@ button {
 
 p {
   font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }

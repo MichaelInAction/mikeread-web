@@ -27,7 +27,7 @@ const StyledLink = styled(Link)<{isCurrentPage: boolean}>(({ theme, isCurrentPag
   color: ${ isCurrentPage ? theme.colors.main : theme.colors.secondary };
   text-decoration: 'none';
   font-size: ${ isCurrentPage ? theme.fontSizes[2] : theme.fontSizes[0] };
-  padding-right: ${ theme.spacings[2] };
+  margin-right: ${ theme.spacings[2] };
   &:focus, &:hover, &:visited, &:link, &:active {
     text-decoration: none;
   }

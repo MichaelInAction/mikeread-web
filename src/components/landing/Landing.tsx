@@ -24,16 +24,12 @@ function Landing() {
 }
 
 const Container = styled.div(({ theme }) => `
-  position: fixed;
-  left: calc(100vw - 1920px);
+  padding-left: calc(100vw - 1920px);
   width: calc(1920px - 525px);
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: ${ theme.colors.blue };
-  -webkit-clip-path: polygon(20% 0, 100% 0, 60% 100%, 0 100%, 0 50%);
-  clip-path: polygon(20% 0, 100% 0, 60% 100%, 0 100%, 0 50%);
 `);
 
 const Heading = styled.div(({ theme }) => `

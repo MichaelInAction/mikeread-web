@@ -1,13 +1,12 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
 } from 'react-router-dom';
 import styled from 'styled-components';
 
-import Landing from './components/landing/Landing';
+import Background from './components/background/Background';
 import Navbar from './components/navbar/Navbar';
+import Wrapper from './components/Wrapper';
 
 function App() {
   return (
@@ -16,32 +15,19 @@ function App() {
         <Nav>
           <Navbar/>
         </Nav>
-        <Switch>
-          <Route exact path='/'>
-            <Landing/>
-          </Route>
-          <Route path='/about'>
-            <div>About</div>
-          </Route>
-          <Route path='/personal'>
-            <div>Personal</div>
-          </Route>
-          <Route path='/Projects'>
-            <div>Projects</div>
-          </Route>
-        </Switch>
+        <Background/>
+        <Wrapper/>
       </Router>
     </Container>
   );
 }
 
 const Container = styled.div(({ theme }) => `
-  background-color: ${ theme.colors.background };
   width: 100vw;
 `);
 
 const Nav = styled.div`
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 1000;
