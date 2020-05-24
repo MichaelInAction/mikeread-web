@@ -27,7 +27,7 @@ function Wrapper() {
               <Route exact path='/' component={Landing}/>
               <Route exact path='/about' component={About}/>
               <Route exact path='/personal' component={Personal}/>
-              <Route exact path='/Projects' component={Projects}/>
+              <Route path='/projects' component={Projects}/>
               <Route>
                 <div>Page Not Found!</div>
               </Route>
@@ -42,7 +42,6 @@ function Wrapper() {
 const Container = styled.div`
   .fade-enter {
     opacity: 0;
-    z-index: 1;
   }
 
   .fade-enter.fade-enter-active {

@@ -1,12 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Hero from '../../images/banner2.png';
+
 function About() {
   return (
     <Container>
+      <HeroWrapper>
+        <HeroImage/>
+      </HeroWrapper>
       <FullBox>
         <Header>
-          <Highlight>Who is</Highlight> Michael Read?
+          <Highlight>About</Highlight> Me
         </Header>
         <CenteredBody>
         Hey! I'm a software engineer currently working for <Highlight>Curalate</Highlight> in Philadelphia, PA.
@@ -20,22 +25,24 @@ function About() {
         <Body>
           As a computer Scientist, I have hands-on experience with a multitude of
           different languages and technologies. Some languages I've spent some time with are:
-          <ul>
-            <li>JavaScript/HTML/CSS</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>SQL</li>
-          </ul>
-          While some of the technologies of note that I have worked with are:
-          <ul>
-            <li>React</li>
-            <li>Angular</li>
-            <li>MySQL/PostgreSQL</li>
-            <li>Tensorflow/Keras (Python)</li>
-            <li>OpenCV</li>
-            <li>NodeJS</li>
-          </ul>
         </Body>
+        <List>
+          <li>JavaScript/HTML/CSS</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>SQL</li>
+        </List>
+        <Body>
+          While some of the technologies of note that I have worked with are:
+        </Body>
+        <List>
+          <li>React</li>
+          <li>Angular</li>
+          <li>MySQL/PostgreSQL</li>
+          <li>Tensorflow/Keras (Python)</li>
+          <li>OpenCV</li>
+          <li>NodeJS</li>
+        </List>
       </RightBox>
       <LeftBox>
         <Header><Highlight>My</Highlight> Experience</Header>
@@ -74,14 +81,38 @@ const Container = styled.div(({ theme }) => `
   height: 100vh;
 `);
 
+const HeroWrapper = styled.div(({ theme }) => `
+  z-index: 40;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: drop-shadow(5px 5px 5px ${ theme.colors.shadow });
+`)
+
+const HeroImage = styled.div(({ theme }) => `
+  background-image: linear-gradient(black, black), url(${ Hero });
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: saturation;
+  z-index: 40;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  height: 100vh;
+  -webkit-clip-path: polygon(calc(100vw - 250px) 0, 100% 0, 150% 100%, 150% 100%);
+  clip-path: polygon(0 0, 20vw 0, 0 100%, 0 100%);
+`);
+
 const FullBox = styled.div(({ theme }) => `
   display: flex;
   flex-direction: column;
   align-items: center;
   height: auto;
-  margin-top: 35vh;
+  margin-top: 25vh;
   margin-bottom: 50px;
-  padding: ${ theme.spacings[1] };
+  padding: ${ theme.spacings[4] };
+  padding-left: 12vw;
   background-color: ${ theme.colors.gray };
   border-top: 1px solid ${ theme.colors.blue };
   border-bottom: 1px solid ${ theme.colors.blue };
@@ -96,7 +127,7 @@ const RightBox = styled.div(({ theme }) => `
   align-self: flex-end;
   margin: 50px 0;
   max-width: 60%;
-  padding: ${ theme.spacings[1] };
+  padding: ${ theme.spacings[3] };
   background-color: ${ theme.colors.gray };
   z-index: 1;
   box-shadow: 5px 5px 5px ${ theme.colors.shadow };
@@ -109,7 +140,7 @@ const LeftBox = styled.div(({ theme }) => `
   align-self: flex-start;
   margin: 50px 0;
   max-width: 60%;
-  padding: ${ theme.spacings[1] };
+  padding: ${ theme.spacings[3] };
   background-color: ${ theme.colors.gray };
   z-index: 1;
   box-shadow: 5px 5px 5px ${ theme.colors.shadow };
@@ -122,7 +153,7 @@ const CenterBox = styled.div(({ theme }) => `
   align-self: center;
   margin: 50px 0;
   max-width: 60%;
-  padding: ${ theme.spacings[1] };
+  padding: ${ theme.spacings[3] };
   background-color: ${ theme.colors.gray };
   z-index: 1;
   box-shadow: 5px 5px 5px ${ theme.colors.shadow };
@@ -146,6 +177,13 @@ const CenteredBody = styled.p(({ theme }) => `
 const Body = styled.p(({ theme }) => `
   font-size: ${ theme.fontSizes[0] };
   color: ${ theme.colors.main };
+  align-self: flex-start;
+`);
+
+const List = styled.ul(({ theme }) => `
+  font-size: ${ theme.fontSizes[0] };
+  color: ${ theme.colors.main };
+  align-self: flex-start;
 `);
 
 const Link = styled.a(({ theme }) => `

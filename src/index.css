@@ -8,13 +8,23 @@ body {
 
 button {
   font-family: 'Bebas Neue', cursive;
+  outline: none;
 }
 
-p {
+p, ul, blockquote {
   font-family: 'Montserrat', sans-serif;
+}
+
+blockquote {
+  font-style: italic;
 }
 
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent; /* make scrollbar transparent */
+}
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
 }

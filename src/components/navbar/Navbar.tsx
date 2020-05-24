@@ -9,30 +9,34 @@ function Navbar() {
   let location = useLocation().pathname;
   return (
     <Container>
-      <StyledLink isCurrentPage={ location === '/' } to='/'>Home</StyledLink>
-      <StyledLink isCurrentPage={ location === '/about' } to='/about'>About Me</StyledLink>
-      <StyledLink isCurrentPage={ location === '/personal' } to='/personal'>Personal</StyledLink>
-      <StyledLink isCurrentPage={ location === '/projects' } to='/projects'>Projects</StyledLink>
+      <StyledLink iscurrentpage={ location === '/' ? 1 : 0 } to='/'>Home</StyledLink>
+      <StyledLink iscurrentpage={ location === '/about' ? 1 : 0 } to='/about'>About Me</StyledLink>
+      <StyledLink iscurrentpage={ location === '/personal' ? 1 : 0 } to='/personal'>Personal</StyledLink>
+      <StyledLink iscurrentpage={ location.includes('/projects') ? 1 : 0 } to='/projects'>Projects</StyledLink>
     </Container>
   );
 }
 
-const Container = styled.div`
+const Container = styled.div(({ theme }) => `
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-`;
+  align-items: flex-start;
+  background: linear-gradient(${ theme.colors.background }, rgba(0,0,0,0));
+`);
 
-const StyledLink = styled(Link)<{isCurrentPage: boolean}>(({ theme, isCurrentPage }) => `
-  color: ${ isCurrentPage ? theme.colors.main : theme.colors.secondary };
+const StyledLink = styled(Link)<{iscurrentpage: number}>(({ theme, iscurrentpage }) => `
+  color: ${ iscurrentpage ? theme.colors.main : theme.colors.secondary };
   text-decoration: 'none';
-  font-size: ${ isCurrentPage ? theme.fontSizes[2] : theme.fontSizes[0] };
-  margin-right: ${ theme.spacings[2] };
+  font-size: ${ iscurrentpage ? theme.fontSizes[2] : theme.fontSizes[0] };
+  text-shadow: 2px 2px 2px ${ theme.colors.shadow };
+  margin-right: ${ theme.spacings[5] };
+  cursor: ${ iscurrentpage ? 'default' : 'pointer' };
+  ${ iscurrentpage ? 'pointer-events: none;' : '' };
   &:focus, &:hover, &:visited, &:link, &:active {
     text-decoration: none;
   }
   &:hover {
-    ${ !isCurrentPage && `color: ${ theme.colors.blue };` }
+    ${ !iscurrentpage && `color: ${ theme.colors.blue };` }
   }
 `);
 

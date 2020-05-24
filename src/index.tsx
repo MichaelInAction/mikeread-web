@@ -7,11 +7,9 @@ import { theme } from './theme';
 import './index.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ThemeProvider theme={ theme }>
-      <App />
-    </ThemeProvider>
-  </React.StrictMode>,
+  <ThemeProvider theme={ theme }>
+    <App />
+  </ThemeProvider>,
   document.getElementById('root')
 );
 

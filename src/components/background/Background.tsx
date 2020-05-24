@@ -6,7 +6,6 @@ import styled from 'styled-components';
 
 function Background() {
   let location = useLocation().pathname;
-  console.log('test');
   return (
     <BackgroundContainer>
       <BackgroundDesign currentPage={ location }/>
@@ -45,10 +44,10 @@ const BackgroundDesign = styled.div<{currentPage: string}>(({ theme, currentPage
     -webkit-clip-path: polygon(calc(100vw - 390px) 0, calc(100vw - 220px) 0, calc(100vw - 220px) 100%, calc(100vw - 390px) 100%);
     clip-path: polygon(calc(100vw - 390px) 0, calc(100vw - 220px) 0, calc(100vw - 220px) 100%, calc(100vw - 390px) 100%);
   ` : ''}
-  ${ currentPage === '/projects' ? `
+  ${ currentPage.includes('/projects') ? `
     position: absolute;
     -webkit-clip-path: polygon(calc(100vw - 250px) 0, 100% 0, 150% 100%, 150% 100%);
-    clip-path: polygon(calc(100vw - 250px) 0, 100% 0, 150% 100%, 150% 100%);
+    clip-path: polygon(calc(100vw - 250px) 0, 100% 0, 130% 100%, 130% 100%);
   ` : ''}
 `);
 
