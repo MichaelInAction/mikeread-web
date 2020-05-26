@@ -33,6 +33,10 @@ const BackgroundDesign = styled.div<{currentPage: string}>(({ theme, currentPage
     position: absolute;
     -webkit-clip-path: polygon(calc(100vw - 1600px) 0, calc(100vw - 525px) 0, calc(100vw - 1000px) 100%, calc(100vw - 2125px) 100%);
     clip-path: polygon(calc(100vw - 1600px) 0, calc(100vw - 525px) 0, calc(100vw - 1000px) 100%, calc(100vw - 2125px) 100%);
+    @media only screen and (max-width: 1150px) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
   ` : ''}
   ${ currentPage === '/about' ? `
     position: absolute;

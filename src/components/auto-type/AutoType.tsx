@@ -81,6 +81,7 @@ class AutoType extends React.Component<IProps> {
 const Paragraph = styled.p(({ theme }) => `
   color: ${ theme.colors.main };
   font-size: ${ theme.fontSizes[3] };
+  text-shadow: 5px 5px 5px ${ theme.colors.darkShadow };
 `); 
 
 const Bold = styled.b(({ theme }) => `

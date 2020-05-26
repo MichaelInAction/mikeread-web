@@ -104,6 +104,10 @@ const HeroImage = styled.div(({ theme }) => `
   height: 100vh;
   -webkit-clip-path: polygon(calc(100vw - 250px) 0, 100% 0, 150% 100%, 150% 100%);
   clip-path: polygon(0 0, 20vw 0, 0 100%, 0 100%);
+  transition: all 50ms linear;
+  :hover {
+    background-image: linear-gradient(white, white), url(${ Hero });
+  }
 `);
 
 const AutoTypeContainer = styled.div(({ theme }) => `
@@ -176,6 +180,9 @@ const Image = styled.img(({ theme }) => `
   margin-top: ${ theme.spacings[3] };
   box-shadow: 5px 5px 5px ${ theme.colors.shadow };
   max-width: 700px;
+  @media only screen and (max-width: 1100px) {
+    max-width: 400px;
+  }
   height: auto;
   transition: all 50ms linear;
   :hover {
