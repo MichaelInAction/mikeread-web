@@ -22,6 +22,7 @@ function Sidebar() {
         <StyledLink onClick={ () => setIsOpen(false) } to='/'>Home</StyledLink>
         <StyledLink onClick={ () => setIsOpen(false) } to='/about'>About Me</StyledLink>
         <StyledLink onClick={ () => setIsOpen(false) } to='/personal'>Personal</StyledLink>
+        <StyledLink onClick={ () => setIsOpen(false) } to='/projects'>Projects</StyledLink>
       </SidebarContainer>
       <DarkenScreen isOpen={ isOpen ? 1 : 0 }/>
     </Container>
@@ -39,6 +40,7 @@ const Container = styled.div(({ theme }) => `
   align-items: flex-end;
   z-index: 10;
   overflow: hidden;
+  pointer-events: none;
 `);
 
 const Bars = styled.i.attrs({
@@ -48,6 +50,7 @@ const Bars = styled.i.attrs({
   color: ${ theme.colors.main };
   padding: ${ theme.spacings[2] };
   z-index: 30;
+  pointer-events: auto;
 `);
 
 const SidebarContainer = styled.div<{isOpen: number}>(({ theme, isOpen }) => `
@@ -63,6 +66,7 @@ const SidebarContainer = styled.div<{isOpen: number}>(({ theme, isOpen }) => `
   background-color: ${ theme.colors.background };
   z-index: 30;
   transition: all .3s ease-in-out;
+  pointer-events: auto;
 `)
 
 const StyledLink = styled(Link)(({ theme }) => `

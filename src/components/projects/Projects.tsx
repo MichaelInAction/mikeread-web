@@ -76,6 +76,10 @@ const CardContainer = styled.div(({ theme }) => `
   grid-gap: ${ theme.spacings[3] };
   align-items: stretch;
   margin: ${ theme.spacings[3] } ${ theme.spacings[5] };
+  @media only screen and (max-width: 760px) {
+    margin: 0, ${ theme.spacings[3] };
+    align-self: center;
+  }
 `);
 
 export default Projects;

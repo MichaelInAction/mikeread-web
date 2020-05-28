@@ -10,6 +10,7 @@ import styled from 'styled-components';
 import About from './about/MobileAbout';
 import Landing from './landing/MobileLanding';
 import Personal from './personal/MobilePersonal';
+import Projects from './projects/Projects';
 
 function Wrapper() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function Wrapper() {
               <Route exact path='/' component={Landing}/>
               <Route exact path='/about' component={About}/>
               <Route exact path='/personal' component={Personal}/>
+              <Route path='/projects' component={Projects}/>
               <Route>
                 <div>Page Not Found!</div>
               </Route>

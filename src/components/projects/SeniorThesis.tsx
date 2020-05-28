@@ -104,6 +104,9 @@ const FullBox = styled.div(({ theme }) => `
   border-bottom: 1px solid ${ theme.colors.blue };
   z-index: 1;
   box-shadow: 5px 5px 5px ${ theme.colors.shadow };
+  @media only screen and (max-width: 760px) {
+    flex-direction: column;
+  }
 `);
 
 const ButtonContainer = styled.div(({ theme }) => `
@@ -120,7 +123,7 @@ const ButtonLink = styled(Link)(({ theme }) => `
   color: ${ theme.colors.main };
   padding: ${ theme.spacings[0] } ${ theme.spacings[2] };
   margin: 0 ${ theme.spacings[2] };
-  width: max-content;
+  min-width: 44px !important;
   font-size: ${ theme.fontSizes[0] };
   cursor: pointer;
   border-radius: 200px;
@@ -131,6 +134,9 @@ const ButtonLink = styled(Link)(({ theme }) => `
     color: ${ theme.colors.blue };
     background-color: ${ theme.colors.main };
     border: 3px solid ${ theme.colors.main };
+  }
+  @media only screen and (max-width: 760px) {
+    margin-bottom: ${ theme.spacings[2] };
   }
 `);
 
@@ -202,14 +208,17 @@ const CarouselContainer = styled.div(({ theme }) => `
 `);
 
 const CarouselSlider = styled(Slider)`
-  max-height: 500px;
-  max-width: 80vw;
+  height: 500px;
+  width: 80vw;
 `;
 
 const CarouselSlide = styled.div(({ theme }) => `
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
+  height: 500px;
+  width: 80vw;
 `);
 
 const Caption = styled.p(({ theme }) => `
@@ -223,6 +232,8 @@ const Caption = styled.p(({ theme }) => `
 
 const Image = styled.img`
   max-height: 500px;
+  max-width: 80vw;
+  margin: auto;
 `;
 
 const Back = styled(ButtonBack)(({ theme }) => `

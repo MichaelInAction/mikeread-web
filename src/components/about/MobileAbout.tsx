@@ -129,6 +129,7 @@ const Background = styled.div(({ theme }) => `
   background-color: ${ theme.colors.blue };
   -webkit-clip-path: polygon(50vw 0, 70vw 0, 130vw 100%, 110vw 100%);
   clip-path: polygon(50vw 0, 70vw 0, 130vw 100%, 110vw 100%);
+  z-index: -2;
 `);
 
 export default MobileAbout;
