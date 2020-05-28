@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import MobileWrapper from './MobileWrapper';
 import * as serviceWorker from './serviceWorker';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
@@ -8,7 +8,7 @@ import './index.css';
 
 ReactDOM.render(
   <ThemeProvider theme={ theme }>
-    <App />
+    <MobileWrapper />
   </ThemeProvider>,
   document.getElementById('root')
 );
