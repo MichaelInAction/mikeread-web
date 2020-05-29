@@ -1,7 +1,27 @@
 import React from 'react';
+import styled from 'styled-components';
 
-class AutoType extends React.Component {
-  constructor(props) {
+interface IProps {
+  before: string;
+  typedWords: string[];
+  after: string;
+}
+
+interface IState {
+  before: string;
+  typedWords: string[];
+  after: string;
+  current: string;
+  deleting: boolean;
+  period: number;
+  loopNum: number;
+  timeout?: any;
+}
+
+class AutoType extends React.Component<IProps> {
+  state: IState;
+
+  constructor(props: IProps) {
     super(props);
     this.state = {
       before: props.before,
@@ -10,13 +30,17 @@ class AutoType extends React.Component {
       current: '',
       deleting: false,
       period: 2000,
-      loopNum: 0
+      loopNum: 0,
+      timeout: undefined,
     };
+  }
+
+  componentDidMount() {
     this.updateText();
   }
 
-  render() {
-    return <p>{this.state.before}<b>{this.state.current}</b>{this.state.after}</p>;
+  componentWillUnmount() {
+    clearTimeout(this.state.timeout);
   }
 
   updateText() {
@@ -40,11 +64,28 @@ class AutoType extends React.Component {
       delta = 500;
     }
     let that = this;
-    setTimeout(function() {
+    this.setState({timeout: setTimeout(function() {
       that.updateText()
-    }, delta);
+    }, delta)});
   }
 
+  render() {
+    return (
+      <Paragraph>
+        {this.state.before}<Bold>{this.state.current}</Bold>{this.state.after}
+      </Paragraph>
+    );
+  }
 }
+
+const Paragraph = styled.p(({ theme }) => `
+  color: ${ theme.colors.main };
+  font-size: ${ theme.fontSizes[3] };
+  text-shadow: 5px 5px 5px ${ theme.colors.darkShadow };
+`); 
+
+const Bold = styled.b(({ theme }) => `
+  color: ${ theme.colors.blue };
+`);
 
 export default AutoType;
