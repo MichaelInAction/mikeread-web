@@ -11,25 +11,26 @@ function About() {
       </HeroWrapper>
       <FullBox>
         <Header>
-          <Highlight>About</Highlight> Me
+          About <Highlight>Me</Highlight>
         </Header>
         <CenteredBody>
-        Hey! I'm a software engineer currently working for <Highlight>Curalate</Highlight> in Philadelphia, PA.
+        Hey! I'm a software engineer currently working for <Highlight>Bazaarvoice</Highlight> in Philadelphia, PA.
         I've been passionate about computer science for as long as I can remember.
         I always have a side project to work on to try and learn new things, be that a language,
         framework, technology, or other skill.
         </CenteredBody>
       </FullBox>
       <RightBox>
-        <Header><Highlight>My</Highlight> Skills</Header>
+        <Header>My <Highlight>Skills</Highlight></Header>
         <Body>
           As a computer Scientist, I have hands-on experience with a multitude of
           different languages and technologies. Some languages I've spent some time with are:
         </Body>
         <List>
-          <li>JavaScript/HTML/CSS</li>
+          <li>JavaScript/Typescript/HTML/CSS</li>
           <li>Python</li>
           <li>Java</li>
+          <li>Scala</li>
           <li>SQL</li>
         </List>
         <Body>
@@ -45,20 +46,21 @@ function About() {
         </List>
       </RightBox>
       <LeftBox>
-        <Header><Highlight>My</Highlight> Experience</Header>
+        <Header>My <Highlight>Experience</Highlight></Header>
         <Body>
           I spent my senior year of college interning at IBM in Southbury,
           CT working with frontend technologies on Corporate Applications.
         </Body>
         <Body>
-          For my first job out of college, I am working as a software engineer
-          at Curalate in Philadelphia, PA. While most of my time is spent as a frontend
-          engineer, I do have full stack experience and hope to continue to develop both
-          my frontend and backend expertise.
+          For my first job out of college in October 2019, I was hired as a software engineer
+          at Curalate in Philadelphia, PA. While most of my time was spent as a frontend
+          engineer, I had a few opportunities to work in a more full-stack capacity, which
+          was very helpful in furthering my expertise in those areas. In September 2020, Curalate
+          was acquired by Bazaarvoice, and I was kept onboard as a software engineer there.
         </Body>
       </LeftBox>
       <CenterBox>
-        <Header><Highlight>My</Highlight> Education</Header>
+        <Header>My <Highlight>Education</Highlight></Header>
         <Body>
           I am a graduate of <Highlight>Marist College</Highlight>, where I earned my bachelor's
           in <Highlight>Computer Science</Highlight> with a concentration in Software Development.
@@ -129,6 +131,9 @@ const RightBox = styled.div(({ theme }) => `
   max-width: 60%;
   padding: ${ theme.spacings[3] };
   background-color: ${ theme.colors.gray };
+  border-top: 1px solid ${ theme.colors.blue };
+  border-bottom: 1px solid ${ theme.colors.blue };
+  border-left: 1px solid ${ theme.colors.blue };
   z-index: 1;
   box-shadow: 5px 5px 5px ${ theme.colors.shadow };
 `);
@@ -142,6 +147,9 @@ const LeftBox = styled.div(({ theme }) => `
   max-width: 60%;
   padding: ${ theme.spacings[3] };
   background-color: ${ theme.colors.gray };
+  border-top: 1px solid ${ theme.colors.blue };
+  border-bottom: 1px solid ${ theme.colors.blue };
+  border-right: 1px solid ${ theme.colors.blue };
   z-index: 1;
   box-shadow: 5px 5px 5px ${ theme.colors.shadow };
 `);
@@ -155,6 +163,7 @@ const CenterBox = styled.div(({ theme }) => `
   max-width: 60%;
   padding: ${ theme.spacings[3] };
   background-color: ${ theme.colors.gray };
+  border: 1px solid ${ theme.colors.blue };
   z-index: 1;
   box-shadow: 5px 5px 5px ${ theme.colors.shadow };
 `);

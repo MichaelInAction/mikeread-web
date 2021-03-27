@@ -19,7 +19,7 @@ function Personal() {
         <CenteredBody>
           I have had a passion for computer science since I was in middle school, when I asked my dad for
           my first programming book, on Java. When I was in 11th grade I took my first computer science
-          course, and the year after that I became one of the founding members of my high schools computer science club.
+          course, and the year after that I became one of the founding members of my high school's computer science club.
         </CenteredBody>
         <CenteredBody>
           I always enjoy having a personal project to work on when I'm not busy with something else,
@@ -28,7 +28,7 @@ function Personal() {
           things that I'm interested in, and making simple Android applications.
         </CenteredBody>
         <CenteredBody>
-          Beyond computer science, I enjoy spending time with my friends, be it hiking through nearby trails,
+          Beyond computer science, I enjoy spending time with my friends, be it hiking through nearby trails back in college,
           having a late night D&D session, hopping online and playing some multiplayer games, or
           just sitting around and hanging out.
         </CenteredBody>
@@ -53,8 +53,8 @@ function Personal() {
         <Body>
           When I'm not busy with work or watching movies, I can usually be found on the couch or at my desk gaming.
           I play a variety of games, from Rogue-Lites to RPGs to Platformers and the occasional MOBA. Some top picks for me at the moment would
-          be <Highlight>The Binding of Isaac: Rebirth</Highlight>, <Highlight>Enter the Gungeon</Highlight>, and <Highlight>Transistor</Highlight>.
-          When I'm playing with friends, Jackbox games are always fun, and an occasional League match wouldn't be out of the question.
+          be <Highlight>Enter the Gungeon</Highlight> and <Highlight>Hades</Highlight>.
+          When I'm playing with friends, Jackbox games are always fun, and an occasional League of Legends session wouldn't be out of the question.
         </Body>
         <Body>
           Outside of video gaming, I've been on and off with <Highlight>Dungeons & Dragons</Highlight> for a few years now. While most of the time
@@ -139,6 +139,9 @@ const RightBox = styled.div(({ theme }) => `
   max-width: 60%;
   padding: ${ theme.spacings[3] };
   background-color: ${ theme.colors.gray };
+  border-top: 1px solid ${ theme.colors.blue };
+  border-bottom: 1px solid ${ theme.colors.blue };
+  border-left: 1px solid ${ theme.colors.blue };
   z-index: 1;
   box-shadow: 5px 5px 5px ${ theme.colors.shadow };
 `);
@@ -152,6 +155,9 @@ const LeftBox = styled.div(({ theme }) => `
   max-width: 60%;
   padding: ${ theme.spacings[3] };
   background-color: ${ theme.colors.gray };
+  border-top: 1px solid ${ theme.colors.blue };
+  border-bottom: 1px solid ${ theme.colors.blue };
+  border-right: 1px solid ${ theme.colors.blue };
   z-index: 1;
   box-shadow: 5px 5px 5px ${ theme.colors.shadow };
 `);
@@ -184,10 +190,6 @@ const Image = styled.img(({ theme }) => `
     max-width: 400px;
   }
   height: auto;
-  transition: all 50ms linear;
-  :hover {
-    transform: scale(1.1);
-  }
 `);
 
 export default Personal;

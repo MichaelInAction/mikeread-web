@@ -14,13 +14,13 @@ function SeniorThesis() {
   return (
     <Container>
       <FullBox>
-        <ButtonLink to='/projects'>&lt; Back</ButtonLink>
+        <ButtonContainer>
+          <ButtonLink to='/projects'>&lt;Back</ButtonLink>
+          <Button href='https://github.com/MichaelInAction/Senior_Thesis_LSTM_Chatbot' rel='noopener noreferrer' target='_blank'>Github</Button>
+        </ButtonContainer>
         <Header>Deployment and Hyper-Parameter Optimization of Chatbots</Header>
         <Spacer/>
       </FullBox>
-      <ButtonContainer>
-        <Button href='https://github.com/MichaelInAction/Senior_Thesis_LSTM_Chatbot' rel='noopener noreferrer' target='_blank'>Github</Button>
-      </ButtonContainer>
       <Body>
         In my senior year at Marist College, I got the opportunity to work with Pablo Rivas,
         a faculty member at Marist, on this project. If you are interested, here is the abstract:
@@ -118,21 +118,21 @@ const ButtonContainer = styled.div(({ theme }) => `
 `);
 
 const ButtonLink = styled(Link)(({ theme }) => `
-  background-color: ${ theme.colors.blue };
+  height: 40px;
+  box-sizing: border-box;
+  background-color: ${ theme.colors.gray };
   border: 3px solid ${ theme.colors.blue };
-  color: ${ theme.colors.main };
+  color: ${ theme.colors.blue };
   padding: ${ theme.spacings[0] } ${ theme.spacings[2] };
   margin: 0 ${ theme.spacings[2] };
   min-width: 44px !important;
   font-size: ${ theme.fontSizes[0] };
   cursor: pointer;
-  border-radius: 200px;
   text-shadow: 2px 2px 2px ${ theme.colors.shadow };
   transition: all 100ms ease-in-out;
   text-decoration: none;
   :hover {
-    color: ${ theme.colors.blue };
-    background-color: ${ theme.colors.main };
+    color: ${ theme.colors.main };
     border: 3px solid ${ theme.colors.main };
   }
   @media only screen and (max-width: 760px) {
@@ -141,19 +141,20 @@ const ButtonLink = styled(Link)(({ theme }) => `
 `);
 
 const Button = styled.a(({ theme }) => `
-  background-color: ${ theme.colors.blue };
+  height: 40px;
+  box-sizing: border-box;
+  background-color: ${ theme.colors.gray };
   border: 3px solid ${ theme.colors.blue };
-  color: ${ theme.colors.main };
+  color: ${ theme.colors.blue };
   padding: ${ theme.spacings[0] } ${ theme.spacings[2] };
   font-size: ${ theme.fontSizes[0] };
   cursor: pointer;
-  border-radius: 200px;
+  overflow: hidden;
   text-shadow: 2px 2px 2px ${ theme.colors.shadow };
   transition: all 100ms ease-in-out;
   text-decoration: none;
   :hover {
-    color: ${ theme.colors.blue };
-    background-color: ${ theme.colors.main };
+    color: ${ theme.colors.main };
     border: 3px solid ${ theme.colors.main };
   }
   &.no {
@@ -170,7 +171,7 @@ const Header = styled.div(({ theme }) => `
 
 const Spacer = styled.div(({ theme }) => `
   visibility: hidden;
-  width: 100px;
+  width: 232px;
 `);
 
 const Body = styled.p(({ theme }) => `

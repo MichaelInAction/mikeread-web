@@ -105,10 +105,8 @@ const Button = styled.button(({ theme }) => `
     padding: ${ theme.spacings[0] } ${ theme.spacings[2] };
   }
   cursor: pointer;
-  border-radius: 200px;
-  transition: transform 10ms linear;
+  transition: all 100ms ease-in-out;
   :hover {
-    transform: scale(1.1);
     border: 3px solid ${ theme.colors.main };
     color: ${ theme.colors.main };
   }

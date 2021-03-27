@@ -13,7 +13,7 @@ function MobilePersonal() {
         <Body>
           I have had a passion for computer science since I was in middle school, when I asked my dad for
           my first programming book, on Java. When I was in 11th grade I took my first computer science
-          course, and the year after that I became one of the founding members of my high schools computer science club.
+          course, and the year after that I became one of the founding members of my high school's computer science club.
         </Body>
         <Body>
           I always enjoy having a personal project to work on when I'm not busy with something else,
@@ -22,7 +22,7 @@ function MobilePersonal() {
           things that I'm interested in, and making simple Android applications.
         </Body>
         <Body>
-          Beyond computer science, I enjoy spending time with my friends, be it hiking through nearby trails,
+          Beyond computer science, I enjoy spending time with my friends, be it hiking through nearby trails back in college,
           having a late night D&D session, hopping online and playing some multiplayer games, or
           just sitting around and hanging out.
         </Body>
@@ -40,8 +40,8 @@ function MobilePersonal() {
         <Body>
           When I'm not busy with work or watching movies, I can usually be found on the couch or at my desk gaming.
           I play a variety of games, from Rogue-Lites to RPGs to Platformers and the occasional MOBA. Some top picks for me at the moment would
-          be <Highlight>The Binding of Isaac: Rebirth</Highlight>, <Highlight>Enter the Gungeon</Highlight>, and <Highlight>Transistor</Highlight>.
-          When I'm playing with friends, Jackbox games are always fun, and an occasional League match wouldn't be out of the question.
+          be <Highlight>Enter the Gungeon</Highlight> and <Highlight>Hades</Highlight>.
+          When I'm playing with friends, Jackbox games are always fun, and an occasional League of Legends session wouldn't be out of the question.
         </Body>
         <Body>
           Outside of video gaming, I've been on and off with <Highlight>Dungeons & Dragons</Highlight> for a few years now. While most of the time
